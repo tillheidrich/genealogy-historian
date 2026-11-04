@@ -1,0 +1,196 @@
+@font-face { font-family: "Source Serif 4"; src: url("{FONTS}/SourceSerif4.ttf"); font-weight: 200 900; font-style: normal; }
+@font-face { font-family: "Source Serif 4"; src: url("{FONTS}/SourceSerif4-Italic.ttf"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: "Albert Sans"; src: url("{FONTS}/AlbertSans.ttf"); font-weight: 100 900; }
+
+/* Format 200 × 260 mm. Satzspiegel 154 × 212 mm, Lesespalte 124 mm mittig.
+   Bilder dürfen die volle Satzspiegelbreite nutzen; ihre Maße werden beim Bau aus dem
+   Seitenverhältnis berechnet, damit kein Bild in einem leeren Rahmen steht. */
+:root { --ink: #191d1c; --mute: #4a5250; --petrol: #1e3c3e; --rost: #9c3d1d; --papier: #f4efe5; --linie: #c9c2b4; }
+@page {
+  size: 200mm 260mm;
+  margin: 22mm 22mm 26mm 24mm;
+  @top-center { content: string(kapitel); font: 500 7pt "Albert Sans"; letter-spacing: .16em; text-transform: uppercase; color: #6b726f; padding-top: 4mm; }
+  @footnote { border-top: .4pt solid var(--linie); padding: 2mm 15mm 0; margin-top: 4mm; }
+}
+@page :right { @bottom-right { content: counter(page); font: 500 8pt "Albert Sans"; color: #555; } }
+@page :left  { margin-left: 22mm; margin-right: 24mm; @bottom-left { content: counter(page); font: 500 8pt "Albert Sans"; color: #555; } }
+@page cover  { margin: 0; @top-center { content: none; } @bottom-right { content: none; } @bottom-left { content: none; } }
+@page leer   { @top-center { content: none; } @bottom-right { content: none; } @bottom-left { content: none; } }
+@page teil   { margin: 0; background: var(--petrol); @top-center { content: none; } @bottom-right { content: none; } @bottom-left { content: none; } }
+@page tafel  { @top-center { content: none; } }
+
+html { font-family: "Source Serif 4", serif; font-size: 10.8pt; line-height: 1.55; color: var(--ink); hyphens: auto; text-align: justify; font-variant-numeric: oldstyle-nums proportional-nums; }
+body { margin: 0; }
+h1, h2, h3 { font-family: "Source Serif 4", serif; text-align: left; hyphens: manual; font-weight: 400; font-variant-numeric: lining-nums; }
+p, ul, ol, dl, blockquote, h3, .kicker, .proof, .abschrift, .einordnung, .leben, table.kd, .zv, .lead, .quelle, .wl { max-width: 124mm; margin-left: auto; margin-right: auto; }
+p { margin-top: 0; margin-bottom: 0; orphans: 3; widows: 3; }
+p + p { text-indent: 4.5mm; }
+.lead { font-size: 13.5pt; line-height: 1.45; text-align: left; hyphens: manual; margin-bottom: 5mm; }
+.lead + p { text-indent: 0; }
+
+/* Kapitelköpfe */
+.kap > h2 { string-set: kapitel content(); break-before: page; font-size: 26pt; line-height: 1.1; font-weight: 300; letter-spacing: -.01em; margin: 18mm auto 10mm; max-width: 124mm; padding-bottom: 4mm; border-bottom: .5pt solid var(--ink); }
+h3 { font-size: 13pt; line-height: 1.25; font-weight: 600; margin-top: 7mm; margin-bottom: 2mm; break-after: avoid; }
+.kicker { font: 600 7.4pt "Albert Sans"; letter-spacing: .16em; text-transform: uppercase; color: var(--rost); margin-top: 0; margin-bottom: 2mm; text-align: left; }
+
+/* Umschlag: Foto randabfallend, Titel auf voller Farbfläche */
+.cover { page: cover; height: 260mm; position: relative; break-after: page; color: var(--papier); }
+.cover .feld { position: absolute; left: 0; right: 0; bottom: 0; height: 92mm; padding: 15mm 20mm 0; }
+.cover .sig { font: 600 7.5pt "Albert Sans"; letter-spacing: .24em; text-transform: uppercase; margin: 0 0 6mm; color: #c9d6d2; max-width: none; }
+.cover h1 { font-size: 40pt; line-height: 1.02; font-weight: 300; letter-spacing: -.015em; margin: 0 0 6mm; }
+.cover .unter { font-size: 13pt; line-height: 1.4; font-style: italic; text-align: left; margin: 0; max-width: none; text-indent: 0; }
+.cover .hg { position: absolute; bottom: 14mm; left: 20mm; font: 500 8pt "Albert Sans"; letter-spacing: .12em; text-transform: uppercase; color: #c9d6d2; margin: 0; text-indent: 0; }
+.schmutztitel { page: leer; break-after: page; padding-top: 70mm; text-align: center; }
+.schmutztitel p { text-align: center; text-indent: 0; }
+.schmutztitel .t { font-size: 22pt; font-weight: 300; line-height: 1.2; }
+.schmutztitel .u { font-style: italic; margin-top: 5mm; color: var(--mute); }
+.impressum { page: leer; break-after: page; padding-top: 150mm; }
+.impressum p { font-size: 8.2pt; line-height: 1.5; text-align: left; text-indent: 0 !important; margin-bottom: 2.4mm; max-width: 110mm; margin-left: 0; }
+.inhalt { page: leer; break-after: page; }
+.inhalt h2 { font-size: 26pt; font-weight: 300; margin: 18mm auto 12mm; max-width: 124mm; }
+.inhalt ol { list-style: none; padding: 0; }
+.inhalt li { display: flex; font-size: 12pt; padding: 2.4mm 0; border-bottom: .4pt solid var(--linie); }
+.inhalt li .n { width: 14mm; font: 600 8pt/2 "Albert Sans"; letter-spacing: .12em; color: var(--rost); }
+.inhalt li .t { flex: 1; }
+.inhalt li a::after { content: target-counter(attr(href), page); font: 500 9pt "Albert Sans"; color: var(--mute); }
+
+/* Teile: ganzseitig Petrol mit großer Ziffer */
+.teil { page: teil; height: 260mm; box-sizing: border-box; padding: 0 22mm 30mm; color: var(--papier); break-before: right; break-after: page; display: flex; flex-direction: column; justify-content: flex-end; }
+.teilnr { font-size: 96pt; font-weight: 200; line-height: 1; margin: 0 0 6mm; max-width: none; color: #7fa39f; text-align: left; font-variant-numeric: lining-nums; }
+.teilh { string-set: kapitel content(); font-size: 36pt; font-weight: 300; line-height: 1.05; letter-spacing: -.01em; margin: 0 0 6mm; }
+.teilzeile { font-size: 12pt; font-style: italic; line-height: 1.45; color: #d8e1de; margin: 0; max-width: 120mm; text-align: left; hyphens: manual; }
+
+/* Belege dezent */
+.fn { float: footnote; font: 7.4pt/1.35 "Albert Sans"; color: #3d4442; text-align: left; hyphens: manual; text-indent: 0; }
+.fn::footnote-call { content: counter(footnote); vertical-align: super; font: 600 5.6pt "Albert Sans"; line-height: 0; color: var(--rost); margin-left: .3mm; }
+.fn::footnote-marker { content: counter(footnote) "  "; font-weight: 600; color: var(--rost); }
+.mk { font: 600 5.6pt "Albert Sans"; color: var(--petrol); vertical-align: super; line-height: 0; margin-left: .6mm; letter-spacing: .02em; }
+.lv-leiste { list-style: none; padding: 0; columns: 2; column-gap: 8mm; font: 8.6pt/1.6 "Albert Sans"; margin-top: 6mm; text-align: left; }
+.lv-leiste .mk { font-size: 8pt; vertical-align: baseline; display: inline-block; width: 5mm; color: var(--rost); }
+
+/* Bilder: Maße kommen aus dem Bau (style="width:…"), Unterschrift bündig an der Bildkante */
+figure { margin: 0 auto; break-inside: avoid; }
+figure img { display: block; }
+figcaption { font: 8.4pt/1.4 "Albert Sans"; color: #333a38; margin-top: 2.4mm; text-align: left; hyphens: manual; text-indent: 0; }
+figcaption .sig { font-weight: 600; letter-spacing: .08em; color: var(--petrol); margin-right: 1.6mm; font-size: 7.4pt; }
+.bild img { box-shadow: 0 0 0 .25pt rgba(0,0,0,.18); }
+figure.auf { margin-bottom: 9mm; }
+.paar { display: flex; justify-content: space-between; align-items: flex-start; width: 154mm; margin: 8mm auto 4mm; break-inside: avoid; }
+.paar figure { margin: 0; }
+
+/* Bildtafeln: eine Seite je Hochformat, zwei Querformate je Seite */
+.tafelseite { page: tafel; break-before: page; height: 206mm; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.tafelseite.zwei { justify-content: space-between; }
+.tafelseite figure { margin: 0; }
+
+/* Geschichten */
+.story { break-before: page; }
+.story h3 { font-size: 24pt; line-height: 1.12; font-weight: 300; letter-spacing: -.01em; margin-top: 0; margin-bottom: 6mm; }
+.story .proof { font: 7.8pt/1.45 "Albert Sans"; color: #3d4442; border-top: .5pt solid var(--ink); padding-top: 2.6mm; margin-top: 8mm; text-align: left; hyphens: manual; text-indent: 0; }
+.story .proof b { letter-spacing: .1em; text-transform: uppercase; font-size: 6.8pt; color: var(--rost); margin-right: 1mm; }
+
+/* Menschen */
+.person { margin: 0 auto 9mm; max-width: 124mm; break-inside: auto; }
+.person h3 { font-size: 15pt; font-weight: 500; margin-top: 0; margin-bottom: 1.2mm; max-width: none; }
+.person .leben { font: 8.8pt/1.5 "Albert Sans"; color: #2c3331; text-align: left; margin-bottom: 2.4mm; max-width: none; }
+.person .alt { font-style: italic; color: var(--mute); text-align: left; max-width: none; }
+.person .fa { text-align: left; text-indent: 0; margin-bottom: 1.4mm; max-width: none; }
+.person .av { float: right; margin: 1mm 0 3mm 6mm; }
+.person .av figcaption { font-size: 6.8pt; }
+.person::after { content: ""; display: block; clear: both; }
+
+/* Funde in Zeitungen und Archiven */
+.fund { break-before: page; }
+.fund h3 { font-size: 20pt; line-height: 1.15; font-weight: 300; margin-top: 0; margin-bottom: 6mm; }
+.wl { font: 600 6.8pt "Albert Sans"; letter-spacing: .16em; text-transform: uppercase; color: var(--rost); margin-top: 6mm; margin-bottom: 1.6mm; text-align: left; text-indent: 0 !important; }
+blockquote { font-style: italic; font-size: 10.4pt; line-height: 1.5; text-align: left; hyphens: manual; border-left: 1.2pt solid var(--rost); padding-left: 4mm; margin-top: 0; margin-bottom: 0; box-sizing: border-box; }
+.quelle { font: 7.4pt/1.4 "Albert Sans"; color: var(--mute); text-align: left; overflow-wrap: anywhere; margin-top: 6mm; text-indent: 0 !important; }
+
+/* Urkunden und Karteikarten */
+.dokument, .kartei { break-before: page; }
+.dokument h3, .kartei h3 { font-size: 20pt; line-height: 1.15; font-weight: 300; margin-top: 0; margin-bottom: 6mm; }
+.dok, .karte { margin-bottom: 6mm; }
+.abschrift { background: var(--papier); padding: 5mm 6mm; margin-top: 6mm; margin-bottom: 6mm; box-sizing: border-box; font-size: 9.8pt; line-height: 1.5; text-align: left; hyphens: manual; }
+.abschrift p { text-indent: 0 !important; margin-bottom: 1.2mm; max-width: none; }
+.uk { font: 600 6.8pt "Albert Sans" !important; letter-spacing: .16em; text-transform: uppercase; color: var(--rost); margin-bottom: 2.4mm !important; }
+.lesung { font: italic 7.8pt/1.4 "Source Serif 4" !important; color: var(--mute); margin-top: 3mm !important; }
+.einordnung p { text-indent: 0; margin-bottom: 1.6mm; max-width: none; }
+table.kd { border-collapse: collapse; width: 124mm; margin-top: 4mm; margin-bottom: 5mm; }
+.kd td { font-size: 9.6pt; padding: 1.4mm 3mm 1.4mm 0; border-bottom: .4pt solid var(--linie); text-align: left; vertical-align: top; }
+.kd td:first-child { font: 600 7pt "Albert Sans"; letter-spacing: .12em; text-transform: uppercase; color: var(--petrol); width: 34mm; padding-top: 2.2mm; }
+.zv { font-size: 9.6pt; line-height: 1.5; background: var(--papier); padding: 4mm 5mm; box-sizing: border-box; text-align: left; margin-top: 5mm; text-indent: 0 !important; }
+.einord { padding-left: 5mm; }
+.einord li { margin-bottom: 2.4mm; text-align: left; }
+
+/* Tabellen und Listen im Anhang */
+table { border-collapse: collapse; }
+th { font: 600 7pt "Albert Sans"; letter-spacing: .12em; text-transform: uppercase; text-align: left; border-bottom: .6pt solid var(--ink); padding: 1.4mm 2mm 1.4mm 0; }
+table.stufen, table.zl { width: 124mm; margin: 0 auto; }
+.stufen td { padding: 1.8mm 2mm 1.8mm 0; vertical-align: top; border-bottom: .4pt solid var(--linie); font-size: 8.8pt; text-align: left; hyphens: manual; }
+.stufen .mk { font-size: 9pt; vertical-align: baseline; color: var(--rost); }
+.zl td { padding: 1.8mm 3mm 1.8mm 0; vertical-align: top; border-bottom: .4pt solid var(--linie); font-size: 9.4pt; line-height: 1.45; text-align: left; hyphens: manual; }
+.zl td.j { width: 26mm; white-space: nowrap; font: 600 8pt "Albert Sans"; color: var(--petrol); padding-top: 2.3mm; }
+.klein li, .qv li { font-size: 8.2pt; line-height: 1.45; margin-bottom: 1.6mm; text-align: left; overflow-wrap: anywhere; hyphens: manual; }
+ul, ol { padding-left: 5mm; box-sizing: border-box; }
+.glossar dt { font: 600 9.4pt "Albert Sans"; margin-top: 3.4mm; break-after: avoid; }
+.glossar dd { margin: .8mm 0 0 0; font-size: 9.8pt; text-align: left; }
+.kontakt { display: flex; flex-wrap: wrap; gap: 2.6mm; width: 154mm; margin: 6mm auto 0; }
+.kontakt .th { width: 23.4mm; margin: 0; }
+.kontakt .th img { width: 23.4mm; height: 29mm; object-fit: cover; }
+.kontakt .th figcaption { font-size: 6pt; margin-top: .6mm; }
+.reg { columns: 2; column-gap: 8mm; list-style: none; padding: 0; font-size: 9pt; line-height: 1.6; }
+.reg li { break-inside: avoid; text-align: left; }
+.reg a.pg::after { content: target-counter(attr(href), page); color: var(--mute); font: 500 8pt "Albert Sans"; }
+a { color: inherit; text-decoration: none; }
+.rueck { page: teil; break-before: left; height: 260mm; box-sizing: border-box; padding: 40mm 26mm; color: var(--papier); }
+.rueck p { font-size: 12pt; line-height: 1.55; font-style: italic; text-align: left; hyphens: manual; margin: 0 0 5mm; max-width: 110mm; text-indent: 0 !important; }
+.rueck .hg { font: 500 8pt "Albert Sans"; font-style: normal; letter-spacing: .12em; text-transform: uppercase; color: #c9d6d2; margin-top: 20mm; }
+.cover .sig.oben { position: absolute; top: 16mm; left: 20mm; margin: 0; color: #e6ece9; }
+.cover .feld { height: 84mm; }
+
+/* Kontext: Karten, Ahnentafel, Epochen, Familie und Welt, Fakten */
+figure.karte-gross { width: 154mm; margin-top: 4mm; }
+figure.karte-gross svg, figure.baum svg { display: block; }
+figure.baum { width: 154mm; margin-top: -4mm; }
+.ahnen > h2 { margin-top: 4mm; margin-bottom: 6mm; }
+.epoche { max-width: 124mm; margin: 0 auto 7mm; break-inside: avoid; }
+.epoche h3 { font-size: 16pt; font-weight: 400; margin-top: 0; margin-bottom: 2mm; }
+.epoche .kicker { margin-bottom: 1mm; }
+table.fw { width: 154mm; margin: 0 auto; border-collapse: collapse; }
+.fw td { font-size: 8.6pt; line-height: 1.4; padding: 1.6mm 3mm 1.6mm 0; border-bottom: .4pt solid var(--linie); vertical-align: top; text-align: left; hyphens: manual; }
+.fw td.j { width: 14mm; font: 600 8pt "Albert Sans"; color: var(--petrol); padding-top: 2mm; }
+.fw td.w { width: 52mm; font-family: "Albert Sans"; font-size: 8pt; color: var(--rost); }
+.fw tr { break-inside: avoid; }
+.fakt { max-width: 124mm; margin: 0 auto 6mm; padding-left: 5mm; border-left: 1.4pt solid var(--rost); break-inside: avoid; }
+.fakt p { max-width: none; text-indent: 0; text-align: left; hyphens: manual; }
+.fakt > p:first-child { font-size: 11.6pt; line-height: 1.45; }
+.fakt .wie { font: 8.2pt/1.45 "Albert Sans"; color: var(--mute); margin-top: 1.6mm; }
+.fakt .wie b { font-size: 6.8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--rost); margin-right: 1mm; }
+.hinweis, .frage { background: var(--papier); padding: 4mm 5mm; box-sizing: border-box; font-size: 9.8pt; line-height: 1.5; text-align: left; hyphens: manual; text-indent: 0 !important; margin-top: 6mm; }
+.hinweis b, .frage b { font: 600 7pt "Albert Sans"; letter-spacing: .14em; text-transform: uppercase; color: var(--rost); display: block; margin-bottom: 1.4mm; }
+.teilhinweis { font-size: 9.6pt; line-height: 1.5; color: #c9d6d2; max-width: 120mm; margin: 10mm 0 0; text-align: left; hyphens: manual; text-indent: 0 !important; border-top: .5pt solid #4f6e6c; padding-top: 4mm; }
+.teilhinweis b { font: 600 7pt "Albert Sans"; letter-spacing: .14em; text-transform: uppercase; color: #e6c3a8; display: block; margin-bottom: 1.4mm; }
+.funde > .fund { break-before: auto; break-inside: avoid; padding-top: 8mm; margin-top: 8mm; border-top: .5pt solid var(--linie); }
+.funde > .fund:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.tafelseite.vier { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-content: space-between; }
+.tafelseite.vier .zelle { width: 74mm; height: 101mm; display: flex; align-items: flex-start; justify-content: center; }
+.tafelseite.vier figcaption { font-size: 7.4pt; }
+.inhalt { page: leer; }
+.inhalt li.tt { font-size: 11.5pt; padding: 3mm 0 1.6mm; border-bottom: .5pt solid var(--ink); margin-top: 3mm; break-after: avoid; }
+.inhalt li.tk { font-size: 9pt; padding: .9mm 0; border-bottom: 0; }
+.inhalt li.tk .t { color: #2c3331; }
+.inhalt li.tk a::after { font-size: 8pt; }
+/* Bildband: randabfallend und Doppelseite */
+@page vollbild { margin: 0; @top-center { content: none; } @bottom-right { content: none; } @bottom-left { content: none; } }
+@page doppel { margin: 0; @top-center { content: none; } @bottom-right { content: none; } @bottom-left { content: none; } }
+.vollbild { page: vollbild; break-before: page; position: relative; height: 260mm; }
+.vollbild .vb { position: absolute; left: -3mm; top: -3mm; overflow: hidden; }
+.vollbild .vb img { display: block; }
+.vollbild .vbcap { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; max-width: none; padding: 3mm 8mm; background: rgba(20,38,40,.72); color: #f1ede4; font: 7.8pt/1.4 "Albert Sans"; text-align: left; text-indent: 0; }
+.vollbild .vbcap .sig { color: #e6c3a8; font-weight: 600; margin-right: 1.6mm; }
+.doppel { page: doppel; position: relative; }
+.doppel.links { break-before: left; }
+.doppel.rechts { break-before: page; }
+.doppel .ds { position: relative; overflow: hidden; }
+.dscap { position: absolute; margin: 0; max-width: none; font: 8.4pt/1.4 "Albert Sans"; color: #333a38; text-align: left; text-indent: 0; }
+.dscap .sig { font-weight: 600; letter-spacing: .08em; color: var(--petrol); margin-right: 1.6mm; font-size: 7.4pt; }

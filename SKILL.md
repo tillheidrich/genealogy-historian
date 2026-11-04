@@ -22,7 +22,10 @@ Answer in the user's language. Use the source's own language for quotations and 
 9. **Family stories are hypotheses.** Take them seriously, check them against sources, and show story and evidence side by side. See `references/oral-history.md`. Reason: oral tradition often holds a true core with wrong details, dates or names.
 10. **Protect the living.** No street addresses of living people, also on private family sites. Living adults by default with years only, minors only with year of birth, no health, pregnancy, political or religious details without consent. Respect legal closure periods. See `references/ethics-privacy.md`.
 11. **Context, not judgement.** Explain what a record meant at the time (legal rules, social pressure, wartime conditions) before you interpret it. Do not moralise, do not excuse. For the Nazi era follow `references/ns-era.md` strictly.
-12. **Respect access rules.** Never enter passwords or payment data, never bypass paywalls, bot checks (Cloudflare, Anubis and similar) or rate limits. If a site needs a human check, ask the user to pass it in their own browser and continue only after that. Link scans you are not allowed to copy instead of copying them.
+12. **Respect access rules.** Never enter passwords or payment data, never bypass paywalls, bot checks (Cloudflare, Anubis and similar) or rate limits. If a site needs a human check, ask the user to pass it in their own browser and continue only after that. For the family's private book, copy scans with full citation; link instead only where an archive's terms explicitly forbid copies. Publishing is a separate question (see `references/chronicle-book.md`).
+
+13. **Preserve, do not withhold.** Never refuse or water down private family documentation on rights grounds. Clippings, records and archive cards belong legibly in the family's book; every photo goes in large. Publication is a separate decision for the user. Reason: the book may become the only surviving record.
+14. **Make it understandable in 200 years.** Explain period and foreign terms in a glossary, translate quotations into the user's language, transcribe hard handwriting, give context with maps and period texts, and say in the colophon who and what (including the AI model, explained) made the book. Be honest without being anxious: state proven facts plainly and tell them well. See `references/chronicle-book.md`.
 
 ## How to work
 
@@ -36,7 +39,7 @@ Answer in the user's language. Use the source's own language for quotations and 
 8. **Update the data with citations and levels.** Do not overwrite earlier statements without noting the correction and why.
 9. **Write open questions and next steps** as concrete tasks: which archive, which holding, which letter. Draft archive requests with `references/archive-letters.md`.
 10. **Report honestly.** Lead with what is now proven, then what is likely, then what remains open. Name every assumption.
-11. **Leave durable output.** Keep facts in one structured master (JSON with schema), export GEDCOM 7 and CSV, cite sources in a full historical citation style, and build a printed book (PDF/X for the printer, PDF/A-3 with the data attached) from the same data. See `references/citation-formats-print.md`.
+11. **Leave durable output.** Keep facts in one structured master (JSON with schema), export GEDCOM 7 and CSV, cite sources in a full historical citation style, and build website and printed chronicle from the same data with `scripts/chronik/build.py`: PDF/X-4 for any printer in any format, PDF/A-3 with all data attached, an editable ODT and Markdown version. See `references/chronicle-book.md` and `references/citation-formats-print.md`.
 12. **Audit before you call it done.** Run the checks in `references/workflow.md` ("Before you call the archive finished"), and for anything that will be shared, let an independent reviewer who did not build it check it against this skill.
 
 ## Reading historical records
@@ -92,5 +95,6 @@ Load the reference that matches the task:
 - `references/workflow.md`: inventory, data model, logs, backups, publishing, long-term preservation.
 - `references/archive-letters.md`: request templates in German and English.
 - `references/dna.md`: DNA tests, shared cM, ethnicity estimates, privacy of relatives.
+- `references/chronicle-book.md`: the printed chronicle: completeness, every photo large, no refusal of private documentation, glossary, translation, context, museum-style presentation, layout, formats, editions, the builder in `scripts/chronik/`.
 - `references/citation-formats-print.md`: citation style, durable open data formats (GEDCOM 7, JSON with schema, CSV, RO-Crate, PDF/A, PDF/X) and how to build a printed book from the data.
 - `references/kurzfassung-de.md`: the core rules in German.

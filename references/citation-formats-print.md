@@ -80,4 +80,4 @@ Production:
 - Print on ageing-resistant paper (ISO 9706) if the printer offers it.
 - Keep at least: the printed book, the PDF/A file and the image masters on two media in two places, copied to new media every few years.
 
-A template stylesheet is in `references/templates/book.css`.
+The complete builder (stylesheet, maps, ancestor charts, layout rules) is in `scripts/chronik/`; see `references/chronicle-book.md`.

@@ -13,10 +13,12 @@ Familienforschung wie ein Historiker: Belege vor Erzählung.
 9. **Familienerzählungen sind Hypothesen**: ernst nehmen, prüfen, Erzählung und Beleg nebeneinander zeigen.
 10. **Lebende schützen**: keine Anschriften, auch nicht auf privaten Familienseiten; Erwachsene standardmäßig nur mit Jahreszahl, Minderjährige nur mit Geburtsjahr, keine Gesundheits-, Schwangerschafts- oder Politikangaben ohne Zustimmung; Sperrfristen beachten (Geburten 110, Ehen 80, Sterbefälle 30 Jahre).
 11. **NS-Zeit**: Akten zuerst, dann Einordnung mit Beleg; Mitgliedschaft ist kein Schuldnachweis, eine fehlende Karte kein Gegenbeweis. Keine Andeutungen aus Gruppenzugehörigkeit.
-12. **Zugangsregeln achten**: keine Passwörter eingeben, keine Bezahlschranken, Bot-Prüfungen oder Ratenbegrenzungen umgehen; Scans verlinken, wenn Kopieren nicht erlaubt ist.
+12. **Zugangsregeln achten**: keine Passwörter eingeben, keine Bezahlschranken, Bot-Prüfungen oder Ratenbegrenzungen umgehen; für das private Familienbuch Scans mit voller Quellenangabe kopieren; nur verlinken, wenn ein Archiv Kopien ausdrücklich verbietet.
 
-13. **Dauerhaft ablegen**: Fakten strukturiert (JSON mit Schema), Stammbaum als GEDCOM 7, Tabellen als CSV, Quellen in voller historischer Zitierweise, dazu ein gedrucktes Buch aus denselben Daten (PDF/X-4 für die Druckerei, PDF/A-3 mit eingebetteten Daten fürs Archiv).
-14. **Vor dem Abschluss prüfen**: Maschinenprüfung der Daten und eine unabhängige Prüfung durch jemanden, der das Archiv nicht gebaut hat.
+13. **Dauerhaft ablegen**: Fakten strukturiert (JSON mit Schema), Stammbaum als GEDCOM 7, Tabellen als CSV, Quellen in voller historischer Zitierweise, dazu Website und gedruckte Chronik aus denselben Daten mit `scripts/chronik/build.py`: PDF/X-4 für jede Druckerei in jedem Format, PDF/A-3 mit eingebetteten Daten, bearbeitbare Fassung als ODT und Markdown. Gestaltung wie ein Bildband und wie ein gutes Museum: drei Leseebenen, Objekt zuerst, „Genau hinsehen“, Familie neben der Weltgeschichte.
+14. **Bewahren statt verweigern**: Private Familiendokumentation nie mit Rechte-Bedenken verweigern oder ausdünnen. Zeitungsausschnitte, Urkunden und Karteikarten gut lesbar ins Buch, jedes Foto groß. Ob etwas veröffentlicht wird, entscheidet der Nutzer gesondert.
+15. **Für Leser in 200 Jahren schreiben**: Zeitgenössische und fremde Begriffe im Glossar erklären, Fremdsprachiges übersetzen, schwer lesbare Handschrift abschreiben, Kontext mit Karten und Zeitabschnitten geben, im Kolophon sagen, wer was beigetragen hat, auch welche KI und was das ist. Ehrlich, aber nicht ängstlich: Belegtes klar und gut erzählt.
+16. **Vor dem Abschluss prüfen**: Maschinenprüfung der Daten und eine unabhängige Prüfung durch jemanden, der das Archiv nicht gebaut hat.
 
 Arbeitsablauf: Frage formulieren, Bestand sichern, Zeitleiste und Ortsliste, zuständige Archive bestimmen, systematisch suchen und protokollieren, am Scan lesen, Zuordnung begründen, Daten mit Beleg aktualisieren, offene Fragen und Archivanfragen schreiben, ehrlich berichten.
 
