@@ -39,3 +39,10 @@ Only resources whose existence and scope are well established are listed. Verify
 - Note the language of the record and quote it in the original.
 - Check calendar and date formats.
 - Record the platform, the collection, the image number and the URL.
+
+
+## France 1914–1918 (civilian internees)
+
+- ICRC prisoner archive (grandeguerre.icrc.org): cards for civilian internees, often two or more per person with different spellings and dates. Record every card and the conflicts.
+- Gallica (BnF) and Yroise (Brest city library) for regional newspapers such as L'Ouest-Éclair and La Dépêche de Brest. Use SRU search and the ALTO text for exact positions. Both throttle (HTTP 429) and Gallica sometimes shows a bot check; wait, or ask the user to open the page.
+- Local history literature on camps (for example on the Île de Sieck) often quotes official telegrams and files of the sous-préfecture; trace these to the Archives départementales before relying on them, and treat forum transcriptions as level L.

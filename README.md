@@ -48,6 +48,8 @@ Die Kurzfassung steht in [references/kurzfassung-de.md](references/kurzfassung-d
 | `references/ethics-privacy.md` | Datenschutz, Rechte, Zugang |
 | `references/workflow.md` | Inventar, Datenmodell, Backup, Veröffentlichung, Langzeitarchiv |
 | `references/archive-letters.md` | Musteranfragen DE/EN |
+| `references/dna.md` | DNA-Tests: Matches, cM, Ethnizitätsschätzung, Datenschutz der Verwandten |
+| `references/kurzfassung-de.md` | Die Kernregeln auf Deutsch |
 
 ## Herkunft
 

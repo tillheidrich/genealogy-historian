@@ -54,3 +54,40 @@ Search the variants, then read the scan.
 ## 6. Recording the match
 
 For each attached record keep: what it says, which identifiers matched, which conflicted, confidence, the reasoning sentence, date of the decision. A later researcher must be able to undo the match.
+
+Template (one block per match):
+
+```
+Match: <record> → <person>
+Identifiers that match: name, birth date 15.07.1890, birthplace, address …
+Identifiers that conflict: age given 20 (expected 25) …
+Namesakes checked: <where, how>; result
+Confidence: proven / very likely / possible / unclear
+Reasoning: one or two sentences
+Decided: <date>, by <who>
+```
+
+## 7. Matching by address or surname only
+
+A shared address, a shared surname in the same village or the same application date makes a family link plausible, not proven. Record the relationship as H and name the other people of that surname in the place. Villages often had several unrelated families of the same name.
+
+## 8. Identifying people on photos
+
+- Who identified the person, when, and on what basis (inscription, family knowledge, resemblance)?
+- Inscription on the photo: level B for the text; whether the text names the person shown or the sender is a separate question.
+- Family identification: level E, with the name of the person who made it.
+- Resemblance between photos (face, ears, posture): at most H. Never let a resemblance-based identification carry other facts (dates, uniforms, places).
+- Uniforms, studio stamps, card formats and clothing date a photo only roughly. Name the feature and the source you used to interpret it; otherwise say "possibly".
+- Keep the identification reversible: store it as a separate field (who, basis, date), not inside the caption text.
+
+
+## 9. Checking other people's online trees
+
+Online trees are leads, not sources. Warning signs that a tree merged different people:
+
+- two spouses at the same time, or a marriage after the recorded death;
+- very many children, or births when a parent was a child, over 50 (mother) or already dead;
+- birth dates for the same person that differ by more than about five years;
+- a common surname in a large place, with no parents or places that separate namesakes.
+
+Look at who changed the entry and when (change log), and trace each fact back to an attached record before using it.

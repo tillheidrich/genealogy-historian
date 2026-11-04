@@ -71,3 +71,19 @@ Check availability and access rules on the archive's own site before you promise
 - Find where the records are today, and in which form (original, copy, film, scan, index).
 - Note fees and waiting times in your recommendation.
 - Never claim a register is online until you have seen the scan list for that holding.
+
+
+## Coverage before negatives
+
+Before you count "no hit" as a negative result, check what the index covers. Examples from practice:
+
+- **Geneteka** (Polish Genealogical Society) indexes many parishes in today's Poland, but large parts of former German Silesia are missing (in one case not a single parish of the districts Landeshut and Hirschberg). Look at the parish list for the region first.
+- **Szukaj w Archiwach** lists archival units; many church book duplicates are listed but marked "No scans". Then the way is a written request to the state archive branch named in the record.
+- **Archion** (Protestant church books) is incomplete for former eastern provinces; check the place in "Ortssuche" before buying a pass.
+- **FamilySearch** historical records: the index is level L; read the image if one is attached. The shared Family Tree is not a source. FamilySearch is run by the Church of Jesus Christ of Latter-day Saints; that does not make its record images less reliable, but user trees and merges there are often wrong.
+
+More finding aids:
+
+- **Meyers Gazetteer** (meyersgaz.org): places of the German Empire around 1912 with civil registry office and parish. Use it with GOV and Kartenmeister to find the right jurisdiction; distinguish places of the same name by district.
+- Poland: **Metryki GenBaza** (scans, free registration, not indexed), **BaSIA** (Greater Poland), **Poznan Project** (19th-century marriages in the Province of Posen).
+- Volksbund grave search: asks for the searcher's name, address and e-mail. The user has to do it; no hit is common for 1914–1918, because many graves were never registered or did not survive.

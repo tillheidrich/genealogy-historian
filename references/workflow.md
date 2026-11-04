@@ -51,3 +51,25 @@ A plain JSON or spreadsheet file under version control is enough. Export to GEDC
 - Follow 3-2-1: three copies, two kinds of media, one off-site (for example a relative's drive).
 - When the research is stable, print a book for the family. With an ISBN, legal deposit copies go to the national library (in Germany the Deutsche Nationalbibliothek), which keeps them permanently. A copy for the local or regional archive makes the family findable there.
 - Freeze an edition ("edition 2027") rather than printing work in progress.
+
+
+## Before you call the archive finished
+
+Run the checks yourself, then let someone (or an independent AI agent) who did not build the archive review it against this skill. A builder grades his own work too kindly.
+
+Machine checks on the data:
+
+- every statement has a level and at least one source; every source ID exists;
+- every source has a finding place (archive, holding, signature or URL) and a date viewed;
+- no statement mixes levels (split it); confidence stored as its own field;
+- every stated age has been compared with the known birth date;
+- living people: no street addresses, only years, no sensitive facts;
+- summaries, "fun facts" and timeline entries carry the same level as the facts they summarise and repeat their caveats;
+- every superlative and count recomputed from the data.
+
+Human checks:
+
+- AI transcriptions confirmed by a person at the scan;
+- identity notes present for every attached record (see identity-matching.md);
+- open tasks sorted into: doable online, needs an archive request, needs the family.
+- Write a short "state of the archive" note: what is proven, what is likely, what is open, and which rules are knowingly not yet met.

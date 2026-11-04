@@ -58,7 +58,7 @@ If one of these is missing, the conclusion is at most "very likely".
 
 ## 4. Evidence levels
 
-Use one level per statement. It describes the best source behind the statement.
+Use one level per statement. The level describes the **weakest** element the statement needs, not the best source cited. A sentence that combines a register entry with a family story is an E statement, not a U statement. Better: split it into atomic statements, each with its own level and source.
 
 | Level | Meaning |
 |---|---|
@@ -68,15 +68,32 @@ Use one level per statement. It describes the best source behind the statement.
 | Z | Newspaper, gazette, address book or other print, scan read; matching confidence stated separately |
 | F | Family document (chronicle, typed family notes, family Bible) not yet checked against registers |
 | B | Inscription, stamp or print on a photo or note |
-| E | Memory or story told by family (recording, interview, user statement) |
+| E | Memory or story told by family (recording, interview, user statement). Note the chain if it is second-hand ("Till, after Berthold") |
+| L | Literature, reference work, forum post, online index or database entry (for example a FamilySearch or Verlustlisten index, a local history book, a forum transcription). The original was not seen; use it as a finding aid and to corroborate |
 | H | Hypothesis: a conclusion drawn from several indications, not documented |
 | O | Open: sources conflict or are missing |
 
 A statement can rise from E or F to U once the register entry is found. Record the change and keep the old source.
 
+Rules that keep levels honest:
+
+- **Matching sets the level too.** A card that gives a name and an address but no parents does not prove a family relationship. The card content is A; the relationship drawn from it is H until a second source confirms it.
+- **AI readings are derivatives.** OCR, handwriting recognition and transcriptions by an AI model (including this one) are finding aids. Mark them "read by AI, not yet checked by a person" until someone has checked the scan.
+- **Context needs its own source.** Background statements (what a camp was like, when a company hired foreigners, how many people did X) need a citation like any other fact. Do not invent figures, percentages or odds ("99.5 percent", "two to one").
+- **Shared online trees are not sources.** FamilySearch Family Tree, Ancestry member trees, Geni, MyHeritage trees: use them only for leads, never cite them as evidence. Their attached record images are sources once you read them.
+
 ## 5. Confidence
 
-For matches between a record and a person, add one of: proven, very likely, possible, unclear. Define them as in SKILL.md and do not mix them with the levels. A newspaper item can be level Z and "very likely" at the same time.
+For matches between a record and a person, add one of: proven, very likely, possible, unclear. Define them as in SKILL.md and do not mix them with the levels. A newspaper item can be level Z and "very likely" at the same time. Store the confidence as its own field next to the level, not only in the running text, so that summaries cannot drop it.
+
+## 5a. Cross-checks that are easy to forget
+
+Run these every time a new record comes in:
+
+- **Ages against birth dates.** Compute the age the record implies and compare it with the known birth date. A difference is a conflict to record, even if it is "probably OCR".
+- **Dates against other dates.** A second-hand date (forum, book) that contradicts a dated newspaper or register is a conflict, not a correction.
+- **Two records of the same person.** If two cards give different birth dates or places, record both and say why you still merge them.
+- **Superlatives and counts** ("the oldest mother", "six people born in X") must be recomputed from the data, not remembered.
 
 ## 6. Conflicts
 
@@ -95,6 +112,10 @@ Log every negative search:
 - how complete the source is (for example "about 20 percent of the cards are lost", "the register for 1829 does not survive").
 
 Write conclusions carefully: "Not found in the NSDAP central and regional card files" is a finding; "was not a member" is not.
+
+## 7a. Cluster research (FAN method)
+
+When a person is hard to find, research the people around them: Friends, Associates, Neighbours. Godparents, marriage witnesses, informants on death records, neighbours in address books, fellow passengers, fellow internees. They often come from the same village, and their records name places the target's records leave out. Keep a small list of these names per person and search them like the target.
 
 ## 8. Avoiding bias
 

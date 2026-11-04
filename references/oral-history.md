@@ -33,3 +33,21 @@ Example (anonymised): "He was in France when the First World War began, was held
 ## 4. Writing
 
 - "According to his grandson (2026), he worked in a bicycle shop in France (E). Before 1914 he lived in Paris (Z, newspaper 1916). The shop is not yet documented."
+
+
+## Interview protocol
+
+For every conversation keep: date, place, who was present, who asked, whether it was recorded (file name), consent to record and to use it, and which photos or documents were shown. Without this, a memory cannot be cited.
+
+## Asking without leading
+
+Ask open questions and do not put the answer into the question.
+
+- Leading: "Berthold says your father worked in a bicycle shop in Paris. When was that?"
+- Open: "What did your father tell you about his time in France? Where did he live, and what did he do for a living?"
+
+Show the photo first and ask "Who is this?" before you say who you think it is.
+
+## Second-hand stories
+
+When a story reaches you through someone else (the user tells you what a cousin said), record the chain: "Till, after Berthold, 03.11.2026". Second-hand memory is weaker than first-hand memory; ask the original teller when possible.

@@ -41,3 +41,8 @@ Research into ancestors between 1933 and 1945 touches guilt, victimhood and fami
 - Put the record first, then the context with a citation, then what remains open.
 - Example: "Application 1 June 1943, admission 1 July 1944, aged 24 (A, NSDAP central card). From 1942 the party admitted mainly young people from the Hitler Youth; why he applied is not documented."
 - Do not speculate about motives. If the family knows something, mark it E.
+
+
+## Insinuation
+
+Do not raise questions of guilt or involvement only because a person belonged to a group (for example "the camp guards were disabled miners, and he was a disabled miner"). Without an individual indication this is an insinuation. Describe the context on a context page; on the person's page say only what sources say about that person.

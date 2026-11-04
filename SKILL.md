@@ -13,14 +13,14 @@ Answer in the user's language. Use the source's own language for quotations and 
 
 1. **Every claim gets a citation.** Name the source precisely enough that someone else can find it again: archive, holding, signature or URL, page or entry number, date viewed. Reason: unverifiable statements cannot be corrected and spread unchecked.
 2. **Separate source, information and evidence.** A source is the object (a register, a card, a newspaper). Information is what it says. Evidence is what that information means for your question. Reason: one source can be reliable for one fact and useless for another (a death record is good for the death, weak for the birth date).
-3. **Rate every statement with a level and a confidence.** Use the levels in `references/method.md` (U certificate, R marginal note, A archive card, Z newspaper or print, F family document, B inscription on a photo, E family memory, H hypothesis, O open) and one of: proven, very likely, possible, unclear. Reason: readers must see at a glance what is documented and what is inferred.
-4. **Read the original.** Search results, OCR text, indexes and AI transcriptions are finding aids, not sources. Open the scan, read it yourself, quote it. Reason: OCR and indexers misread names and numbers all the time (P for R, 8 for 3, u for ü).
+3. **Rate every statement with a level and a confidence.** Use the levels in `references/method.md` (U certificate, R marginal note, A archive card, Z newspaper or print, F family document, B inscription on a photo, E family memory, L literature, index or database, H hypothesis, O open) and one of: proven, very likely, possible, unclear. The level is set by the weakest element the statement needs; split mixed statements. Reason: readers must see at a glance what is documented and what is inferred.
+4. **Read the original.** Search results, OCR text, indexes, online trees and AI transcriptions (including your own readings) are finding aids, not sources. Open the scan, read it, quote it, and mark AI readings as unchecked until a person has confirmed them. Never take names, dates or book titles from model memory; check every cited title in a library catalogue. Reason: OCR, indexers and language models misread and invent, and model errors look plausible.
 5. **Document negative results.** Record where you searched, with which terms, and that nothing was found. Reason: a negative search saves the next person the same work, and absence is only meaningful when the search is described. Absence of a record is never proof that something did not happen; say how complete the source is.
 6. **Keep contradictions open.** When two sources disagree, show both, explain which is more reliable and why, and do not silently pick one. Reason: the less likely source is sometimes right.
 7. **Never fill gaps with plausible inventions.** No invented dates, places, occupations, motives, feelings or dialogue. If you speculate, label it H and say what would test it. Reason: invented details are indistinguishable from facts once written down.
-8. **Test alternatives.** Before you accept that a record belongs to a person, ask which other person it could be (namesakes, cousins, a second marriage) and look for the detail that rules them in or out. Reason: confirmation bias is the most common error in genealogy.
+8. **Test alternatives.** Before you accept that a record belongs to a person, ask which other person it could be (namesakes, cousins, a second marriage) and look for the detail that rules them in or out. A shared address or surname is a hint, not a link. Write an identity note for every match. Compare every stated age with the known birth date. Reason: confirmation bias is the most common error in genealogy.
 9. **Family stories are hypotheses.** Take them seriously, check them against sources, and show story and evidence side by side. See `references/oral-history.md`. Reason: oral tradition often holds a true core with wrong details, dates or names.
-10. **Protect the living.** No addresses of living people in anything that may be published. Minors only with year of birth. Respect legal closure periods. See `references/ethics-privacy.md`.
+10. **Protect the living.** No street addresses of living people, also on private family sites. Living adults by default with years only, minors only with year of birth, no health, pregnancy, political or religious details without consent. Respect legal closure periods. See `references/ethics-privacy.md`.
 11. **Context, not judgement.** Explain what a record meant at the time (legal rules, social pressure, wartime conditions) before you interpret it. Do not moralise, do not excuse. For the Nazi era follow `references/ns-era.md` strictly.
 12. **Respect access rules.** Never enter passwords or payment data, never bypass paywalls, bot checks (Cloudflare, Anubis and similar) or rate limits. If a site needs a human check, ask the user to pass it in their own browser and continue only after that. Link scans you are not allowed to copy instead of copying them.
 
@@ -30,12 +30,13 @@ Answer in the user's language. Use the source's own language for quotations and 
 2. **Take stock of what exists.** Family documents, photos (front and back), letters, notes, earlier trees, interviews. Give every item a stable ID and record what it says, verbatim where possible. See `references/workflow.md`.
 3. **Build a timeline and a place list** from what is already known. Mark each entry with level and source. Gaps and conflicts become research tasks.
 4. **Choose sources by time and place.** Jurisdiction decides where records are: which parish, which civil registry, which state archive today, which country after border changes. Use `references/sources-de.md` and `references/sources-international.md`. Check historical place names and today's names (for example German names in today's Poland).
-5. **Search systematically and log every search** (date, database, query, result count, relevant hits, negatives).
+5. **Search systematically and log every search** (date, database, query, result count, relevant hits, negatives). Before you count "no hit" as negative, check what the index or archive actually covers for that place and period.
 6. **Read and transcribe hits from the scan.** Quote the exact wording, then translate, then interpret.
 7. **Match hits to people** with the method in `references/identity-matching.md`. Write down why a hit belongs to the person and what speaks against it.
 8. **Update the data with citations and levels.** Do not overwrite earlier statements without noting the correction and why.
 9. **Write open questions and next steps** as concrete tasks: which archive, which holding, which letter. Draft archive requests with `references/archive-letters.md`.
 10. **Report honestly.** Lead with what is now proven, then what is likely, then what remains open. Name every assumption.
+11. **Audit before you call it done.** Run the checks in `references/workflow.md` ("Before you call the archive finished"), and for anything that will be shared, let an independent reviewer who did not build it check it against this skill.
 
 ## Reading historical records
 
@@ -87,4 +88,5 @@ Load the reference that matches the task:
 - `references/ethics-privacy.md`: living people, minors, publication, rights.
 - `references/workflow.md`: inventory, data model, logs, backups, publishing, long-term preservation.
 - `references/archive-letters.md`: request templates in German and English.
+- `references/dna.md`: DNA tests, shared cM, ethnicity estimates, privacy of relatives.
 - `references/kurzfassung-de.md`: the core rules in German.

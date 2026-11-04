@@ -34,3 +34,13 @@ A family story: "He ran away as a boy." Full-text search of the boy's surname an
 - Respect rate limits. On HTTP 429 wait and slow down; do not hammer the server.
 - Prefer official APIs and bulk interfaces over page scraping.
 - Do not republish whole pages if the terms forbid it; a citation clipping with source is usually acceptable, but check.
+
+
+## AI transcription of handwriting and print
+
+- Read yourself first, then use the model. Give context: language, period, place, names you already know.
+- Work in small pieces and compare word by word with the image. Check names, places, numbers and abbreviations separately.
+- Language models make subtle, plausible errors; classic OCR and Transkribus make visible ones. Be more suspicious of fluent output.
+- If a model returns fluent text for a passage you cannot read, treat that as a warning, not a success. Models have invented whole diary entries in Kurrent.
+- Mark every AI reading as "read by AI, not checked" until a person has checked it.
+- For hard pages, ask a community (for example r/Kurrent, FamilySearch Community, regional forums): send the whole entry with its header, place and year, and your own reading.
