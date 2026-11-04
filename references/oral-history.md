@@ -51,3 +51,10 @@ Show the photo first and ask "Who is this?" before you say who you think it is.
 ## Second-hand stories
 
 When a story reaches you through someone else (the user tells you what a cousin said), record the chain: "Till, after Berthold, 03.11.2026". Second-hand memory is weaker than first-hand memory; ask the original teller when possible.
+
+
+## Ask early, ask again
+
+Older relatives often know names and places they do not mention until asked with a document in front of them. Interview before you spend money on records, and go back with each new find.
+
+Family lore often grows around a small true core. The core is worth more than the story around it: test each detail separately.

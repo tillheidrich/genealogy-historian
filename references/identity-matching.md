@@ -91,3 +91,9 @@ Online trees are leads, not sources. Warning signs that a tree merged different 
 - a common surname in a large place, with no parents or places that separate namesakes.
 
 Look at who changed the entry and when (change log), and trace each fact back to an attached record before using it.
+
+
+## 10. Same names in one family
+
+- Parents often gave a child the name of a sibling who had died (for example Peter Joseph born 1873 and Peter born 1875 in the same family). Two children of the same name usually mean the first died; look for the burial or death before treating them as one person.
+- Given names were used interchangeably over a lifetime: Johann, Hans, Johannes, Jan; Katharina, Kathrin; Maria Antoinette, Anette, Antonette. Record all forms and search them.

@@ -15,7 +15,8 @@ Familienforschung wie ein Historiker: Belege vor Erzählung.
 11. **NS-Zeit**: Akten zuerst, dann Einordnung mit Beleg; Mitgliedschaft ist kein Schuldnachweis, eine fehlende Karte kein Gegenbeweis. Keine Andeutungen aus Gruppenzugehörigkeit.
 12. **Zugangsregeln achten**: keine Passwörter eingeben, keine Bezahlschranken, Bot-Prüfungen oder Ratenbegrenzungen umgehen; Scans verlinken, wenn Kopieren nicht erlaubt ist.
 
-13. **Vor dem Abschluss prüfen**: Maschinenprüfung der Daten und eine unabhängige Prüfung durch jemanden, der das Archiv nicht gebaut hat.
+13. **Dauerhaft ablegen**: Fakten strukturiert (JSON mit Schema), Stammbaum als GEDCOM 7, Tabellen als CSV, Quellen in voller historischer Zitierweise, dazu ein gedrucktes Buch aus denselben Daten (PDF/X-4 für die Druckerei, PDF/A-3 mit eingebetteten Daten fürs Archiv).
+14. **Vor dem Abschluss prüfen**: Maschinenprüfung der Daten und eine unabhängige Prüfung durch jemanden, der das Archiv nicht gebaut hat.
 
 Arbeitsablauf: Frage formulieren, Bestand sichern, Zeitleiste und Ortsliste, zuständige Archive bestimmen, systematisch suchen und protokollieren, am Scan lesen, Zuordnung begründen, Daten mit Beleg aktualisieren, offene Fragen und Archivanfragen schreiben, ehrlich berichten.
 

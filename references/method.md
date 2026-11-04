@@ -80,6 +80,7 @@ Rules that keep levels honest:
 - **Matching sets the level too.** A card that gives a name and an address but no parents does not prove a family relationship. The card content is A; the relationship drawn from it is H until a second source confirms it.
 - **AI readings are derivatives.** OCR, handwriting recognition and transcriptions by an AI model (including this one) are finding aids. Mark them "read by AI, not yet checked by a person" until someone has checked the scan.
 - **Context needs its own source.** Background statements (what a camp was like, when a company hired foreigners, how many people did X) need a citation like any other fact. Do not invent figures, percentages or odds ("99.5 percent", "two to one").
+- **Beware AI-generated content in secondary sources.** Since about 2023, online trees, blogs and even transcriptions may contain AI-generated text. A claim without a traceable primary source is a lead at best.
 - **Shared online trees are not sources.** FamilySearch Family Tree, Ancestry member trees, Geni, MyHeritage trees: use them only for leads, never cite them as evidence. Their attached record images are sources once you read them.
 
 ## 5. Confidence

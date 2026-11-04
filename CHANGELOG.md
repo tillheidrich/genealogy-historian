@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 – 2026-11-04
+
+- New reference `citation-formats-print.md`: historical citation style with examples, durable open formats (GEDCOM 7.0 and 5.5.1, JSON with JSON Schema, JSONL/CSV, RO-Crate, SHA-256, TIFF/PNG, WAV/FLAC, WebVTT, PDF/A, PDF/X), Markdown's role, and how to build a complete printed book from the data.
+- Template `references/templates/book.css` for CSS Paged Media (WeasyPrint): footnotes, running heads, index page numbers, bleed and crop marks.
+- Core rule 11: leave durable output.
+
 ## 1.1.0 – 2026-11-04
 
 Lessons from a full archive project and an independent review of it, plus expert sources on AI in genealogy.
@@ -14,6 +20,7 @@ Lessons from a full archive project and an independent review of it, plus expert
 - No insinuations from group membership in the Nazi era.
 - Cluster (FAN) research, AI transcription workflow, community help.
 - New reference `dna.md`.
+- From r/Genealogy (read via OpenCLI): calculations only in code, save scans and register/page numbers because links break, necronyms and interchangeable given names, interview early, caution with AI-generated secondary content.
 - Final audit step with machine checks and an independent reviewer.
 
 ## 1.0.0 – 2026-11-04

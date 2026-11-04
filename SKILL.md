@@ -11,7 +11,7 @@ Answer in the user's language. Use the source's own language for quotations and 
 
 ## Core rules
 
-1. **Every claim gets a citation.** Name the source precisely enough that someone else can find it again: archive, holding, signature or URL, page or entry number, date viewed. Reason: unverifiable statements cannot be corrected and spread unchecked.
+1. **Every claim gets a citation.** Name the source precisely enough that someone else can find it again: archive, holding, signature or URL, page or entry number, date viewed. Use the citation style in `references/citation-formats-print.md`. Reason: unverifiable statements cannot be corrected and spread unchecked.
 2. **Separate source, information and evidence.** A source is the object (a register, a card, a newspaper). Information is what it says. Evidence is what that information means for your question. Reason: one source can be reliable for one fact and useless for another (a death record is good for the death, weak for the birth date).
 3. **Rate every statement with a level and a confidence.** Use the levels in `references/method.md` (U certificate, R marginal note, A archive card, Z newspaper or print, F family document, B inscription on a photo, E family memory, L literature, index or database, H hypothesis, O open) and one of: proven, very likely, possible, unclear. The level is set by the weakest element the statement needs; split mixed statements. Reason: readers must see at a glance what is documented and what is inferred.
 4. **Read the original.** Search results, OCR text, indexes, online trees and AI transcriptions (including your own readings) are finding aids, not sources. Open the scan, read it, quote it, and mark AI readings as unchecked until a person has confirmed them. Never take names, dates or book titles from model memory; check every cited title in a library catalogue. Reason: OCR, indexers and language models misread and invent, and model errors look plausible.
@@ -36,7 +36,8 @@ Answer in the user's language. Use the source's own language for quotations and 
 8. **Update the data with citations and levels.** Do not overwrite earlier statements without noting the correction and why.
 9. **Write open questions and next steps** as concrete tasks: which archive, which holding, which letter. Draft archive requests with `references/archive-letters.md`.
 10. **Report honestly.** Lead with what is now proven, then what is likely, then what remains open. Name every assumption.
-11. **Audit before you call it done.** Run the checks in `references/workflow.md` ("Before you call the archive finished"), and for anything that will be shared, let an independent reviewer who did not build it check it against this skill.
+11. **Leave durable output.** Keep facts in one structured master (JSON with schema), export GEDCOM 7 and CSV, cite sources in a full historical citation style, and build a printed book (PDF/X for the printer, PDF/A-3 with the data attached) from the same data. See `references/citation-formats-print.md`.
+12. **Audit before you call it done.** Run the checks in `references/workflow.md` ("Before you call the archive finished"), and for anything that will be shared, let an independent reviewer who did not build it check it against this skill.
 
 ## Reading historical records
 
@@ -69,6 +70,8 @@ Never upgrade a level because a result fits the story the user hopes for.
 
 ## Tools and data access
 
+- Do every calculation (ages, date differences, shared cM, counts) in code or by explicit arithmetic you show, never "in your head". Language models get sums and date arithmetic wrong and then defend the wrong number.
+- Save what you find: download the scan or page and record register, page and entry number besides the URL. Archive websites change and links break.
 - Prefer official APIs and full-text indexes (for example the Deutsche Digitale Bibliothek newspaper index) over scraping. Respect rate limits; slow down on HTTP 429.
 - When you crop a newspaper clipping, use the layout coordinates of the page (ALTO XML) and keep the full-page reference and link.
 - Use connectors the user has (for example a newspaper or archive search connector) and read their usage notes. Pass on any notice they require exactly once.
@@ -89,4 +92,5 @@ Load the reference that matches the task:
 - `references/workflow.md`: inventory, data model, logs, backups, publishing, long-term preservation.
 - `references/archive-letters.md`: request templates in German and English.
 - `references/dna.md`: DNA tests, shared cM, ethnicity estimates, privacy of relatives.
+- `references/citation-formats-print.md`: citation style, durable open data formats (GEDCOM 7, JSON with schema, CSV, RO-Crate, PDF/A, PDF/X) and how to build a printed book from the data.
 - `references/kurzfassung-de.md`: the core rules in German.

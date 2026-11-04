@@ -49,6 +49,7 @@ Die Kurzfassung steht in [references/kurzfassung-de.md](references/kurzfassung-d
 | `references/workflow.md` | Inventar, Datenmodell, Backup, Veröffentlichung, Langzeitarchiv |
 | `references/archive-letters.md` | Musteranfragen DE/EN |
 | `references/dna.md` | DNA-Tests: Matches, cM, Ethnizitätsschätzung, Datenschutz der Verwandten |
+| `references/citation-formats-print.md` | Zitierweise, dauerhafte offene Datenformate, Buch für die Druckerei (PDF/X-4) und das Archiv (PDF/A-3) |
 | `references/kurzfassung-de.md` | Die Kernregeln auf Deutsch |
 
 ## Herkunft
