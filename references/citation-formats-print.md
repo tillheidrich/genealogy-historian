@@ -16,12 +16,12 @@ Order for archival sources (German historical convention, compatible with Eviden
 
 Examples:
 
-- Register: Landesarchiv NRW, Abt. Rheinland, PA 3103 Nr. 601: Standesamt Siersdorf, Sterberegister 1921, Nr. 35 (Anna Grümmer geb. Latten), Bild 39, online eingesehen am 03.11.2026.
-- Newspaper: L'Ouest-Éclair (Rennes), 26.06.1915, S. 3, Rubrik „Brest“, Gallica, ark:/12148/bpt6k644397z, eingesehen am 03.11.2026.
-- Card file: Bundesarchiv, R 9361 (NSDAP-Zentralkartei), Karte Johann Junker, geb. 01.01.1908; Scan über DER SPIEGEL, NSDAP-Archiv, abgerufen am 03.11.2026.
-- Family item: Familienarchiv Junker (Privatbesitz), Foto DFA-JUN-F0426, Rückseite, Bleistift.
-- Interview: Erika Junker, Gespräch mit Till Heidrich, 03.03.2012, Tonaufnahme Q11, ab 01:21.
-- Literature: Le Goff, Jean-Claude: Histoire de l'île de Sieck, 2. Aufl., Santec 1989, S. …
+- Register: Landesarchiv Beispielland, Abt. Musterstadt, PA 0000 Nr. 000: Standesamt Musterdorf, Sterberegister 1921, Nr. 35 (Erika Beispiel geb. Muster), Bild 39, online eingesehen am TT.MM.JJJJ. (erfundenes Beispiel)
+- Newspaper: Musterstädter Anzeiger, 26.06.1915, S. 3, Rubrik „Aus der Stadt“, Digitalisat ark:/00000/beispiel, eingesehen am TT.MM.JJJJ. (erfundenes Beispiel)
+- Card file: Bundesarchiv, Bestand und Signatur, Karteikarte Max Mustermann, geb. 01.01.1900; Quelle des Scans, abgerufen am TT.MM.JJJJ. (erfundenes Beispiel; Karteien mit NS-Bezug nie mit echten Namen in öffentlichen Dateien)
+- Family item: Familienarchiv Beispiel (Privatbesitz), Foto DFA-BSP-F0001, Rückseite, Bleistift. (erfundenes Beispiel)
+- Interview: Erika Beispiel, Gespräch mit der Bearbeiterin, TT.MM.JJJJ, Tonaufnahme Q01, ab 01:21. (erfundenes Beispiel)
+- Literature: Nachname, Vorname: Titel des Buches, 2. Aufl., Ort Jahr, S. … (erfundenes Beispiel)
 - Forum or website: author or handle, title of the post, site, date of post, URL, date viewed. Mark it as level L.
 
 Rules:

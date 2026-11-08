@@ -733,7 +733,7 @@ for a_, b_ in [("size: 200mm 260mm", f"size: {W}mm {H}mm"), ("margin: 22mm 22mm 
 import sprachen
 body = sprachen.uebersetze(body, SPRACHE)
 doc = f"""<!doctype html><html lang="{SPRACHE}"><head><meta charset="utf-8"><title>{e(BK["titel"])}</title>
-<meta name="author" content="{e(BK["autor"])}"><meta name="description" content="Belegte Familiengeschichte, Stand {e(STAND)}"><meta name="keywords" content="Familiengeschichte, Junker, Rückert">
+<meta name="author" content="{e(BK["autor"])}"><meta name="description" content="Belegte Familiengeschichte, Stand {e(STAND)}"><meta name="keywords" content="Familiengeschichte">
 <style>{css}</style></head><body>{body}</body></html>"""
 with open(os.path.join(B, "buch.html"), "w", encoding="utf-8") as fh:
     fh.write(doc)
